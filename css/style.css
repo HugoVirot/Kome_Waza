@@ -1,0 +1,220 @@
+/* ************** règles générales ************** */
+
+body {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #003e52;
+}
+
+
+/* ************** header ************** */
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+header i {
+    visibility:hidden
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style-type: none;
+  margin: 15px;
+  font-size: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #6cadc2;
+}
+
+nav ul li a:visited {
+  color: #003e52;
+}
+
+/* ************** photo des bols ************** */
+
+#images-bol {
+  background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url("../images/header-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+}
+
+#images-bol h1 {
+  color :white;
+  font-size: 150px;
+}
+
+/* ************** epices ************** */
+
+#epices {
+  display: flex;
+  justify-content: center;
+}
+
+#texte-kome-waza {
+  text-align: right;
+  flex-basis: 29%;
+  margin-top: 100px;
+}
+
+#texte-kome-waza h1,
+#texte-kome-waza p {
+  margin-right: 50px;
+}
+
+#texte-kome-waza h1 {
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+#texte-kome-waza p:first-of-type {
+  margin-bottom: 20px;
+}
+
+#texte-kome-waza p:nth-of-type(2) {
+  line-height: 1.5;
+}
+
+/* ************** slider ************** */
+
+#slider img {
+  width: 100vw;
+}
+
+/* ************** menu ************** */
+
+#menu {
+  margin: 0 20vw;
+}
+
+#menu h1 {
+  border-bottom: #003e52 1px solid;
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+#menu i {
+  margin-right: 20px;
+  color: #7fa6ad;
+  font-size: 20px;
+}
+
+#menu p {
+  text-align: left;
+  margin-top: 20px;
+}
+
+#menu h2,
+#menu p {
+  text-align: left;
+}
+
+#menu h2 {
+  margin-top: 20px;
+}
+
+p img {
+  width: 100%;
+}
+
+/* ************** sushis ************** */
+
+#sushis {
+  margin-top: 80px;
+}
+
+#sushis img {
+  width: 100vw;
+}
+
+/* ************** carte ************** */
+
+iframe {
+  filter: grayscale(100%);
+  margin-top: 20px;
+}
+
+/* ************** footer ************** */
+
+footer {
+  background: #003e52;
+  height: 200px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer p {
+  margin-top: 20px;
+}
+
+/* ******** media queries téléphones + tablettes ************** */
+
+@media screen and (max-width: 1024px){
+    nav {
+        flex-direction: column;
+        position: fixed;
+        top:0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        z-index: 1;
+    }
+}
+
+/* ************** media queries téléphones ************** */
+
+@media screen and (max-width: 576px) {
+  ul {
+    flex-direction: column;
+  }
+
+  section {
+    margin: 30px auto;
+  }
+
+  #epices {
+    flex-direction: column;
+  }
+
+  #texte-kome-waza {
+    order: -1;
+    padding: 20px;
+    margin-top: 50px;
+  }
+
+  nav {
+    display: flex;
+    padding: 20px;
+  }
+
+  nav li {
+    margin-bottom: 10px;
+    font-size: 25px;
+  }
+
+  header i {
+    color: black;
+    visibility: visible;
+  }
+
+  #navigation {
+    display: none;
+    width: 100vw;
+  }
+}
